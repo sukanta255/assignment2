@@ -1,8 +1,13 @@
 const express = require("express");
 const {userRouter} = require("./routes/users.routes");
 const {logger} = require("./middleware/logger.middleware")
+require("dotenv").config
+const cors = require("cors");
 
 const app = express();
+app.use(cors({
+    origin: "*"
+}))
 app.use(express.json());
 
 // logs.txt file created using logger middleware 
@@ -30,7 +35,7 @@ app.use((err,req,res,next) => {
 
 
 // running server at port number 3000
-const port = 3000;
+const port = process.env.port || 3000;
 app.listen(port, ()=>{
     console.log(`Server is running at port Number ${port}`);
 })
