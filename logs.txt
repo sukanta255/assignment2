@@ -18,3 +18,4 @@ Method: POST, Route: /api/users user-agent:Thunder Client (https://www.thundercl
 Method: GET, Route: /api/users user-agent:Thunder Client (https://www.thunderclient.com)
 Method: GET, Route: /api/users user-agent:Thunder Client (https://www.thunderclient.com)
 Method: GET, Route: /api/users user-agent:Thunder Client (https://www.thunderclient.com)
+Method: GET, Route: /api/users user-agent:Thunder Client (https://www.thunderclient.com)
