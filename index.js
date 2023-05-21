@@ -36,6 +36,11 @@ app.use((err,req,res,next) => {
 
 // running server at port number 3000
 const port = process.env.port || 3000;
-app.listen(port, ()=>{
-    console.log(`Server is running at port Number ${port}`);
+app.listen(port, async()=>{
+    try{
+        console.log(`Server is running at port Number ${port}`);
+
+    }catch(err){
+        console.log(err)
+    }
 })
