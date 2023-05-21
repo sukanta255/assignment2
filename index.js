@@ -1,6 +1,6 @@
 const express = require("express");
 const {userRouter} = require("./routes/users.routes");
-const {logger} = require("./middleware/logger.middleware")
+// const {logger} = require("./middleware/logger.middleware")
 require("dotenv").config
 const cors = require("cors");
 
@@ -11,7 +11,7 @@ app.use(cors({
 app.use(express.json());
 
 // logs.txt file created using logger middleware 
-app.use(logger);
+// app.use(logger);
 
 
 
