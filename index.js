@@ -24,14 +24,14 @@ app.get("/",(req,res) =>{
 app.use("/api",userRouter);
 
 // Handling middleware for Invalid Error Message
-app.use((req,res,next) => {
-    res.status(404).json({ error: "Invalid route"});
-})
+// app.use((req,res,next) => {
+//     res.status(404).json({ error: "Invalid route"});
+// })
 
 // Handling middleware for  Internal server Error Message
-app.use((err,req,res,next) => {
-    res.status(500).json({ error: "Internal Server Error"});
-})
+// app.use((err,req,res,next) => {
+//     res.status(500).json({ error: "Internal Server Error"});
+// })
 
 
 // running server at port number 3000
